@@ -33,19 +33,17 @@ def main():
         """
         <style>
         .stApp {
-            background-color: #2E3440;
             font-family: 'Arial', sans-serif;
             padding: 20px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-            color: #D8DEE9;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #88C0D0;
+            color: #333333;
             text-align: center;
             font-family: 'Arial', sans-serif;
         }
         .stButton>button {
-            background-color: #5E81AC;
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
@@ -58,21 +56,24 @@ def main():
             cursor: pointer;
             transition-duration: 0.4s;
         }
+        .stButton>button:focus {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
         .stButton>button:hover {
             background-color: white;
             color: black;
-            border: 2px solid #5E81AC;
+            border: 2px solid #4CAF50;
         }
         .stTextInput>div>div>input {
             border-radius: 5px;
-            border: 1px solid #4C566A;
+            border: 1px solid #cccccc;
             padding: 10px;
-            background-color: #434C5E;
-            color: #D8DEE9;
         }
         .stTextInput>div>div>input:focus {
-            border-color: #81A1C1;
-            box-shadow: 0px 0px 5px rgba(129, 161, 193, 0.5);
+            border-color: #4CAF50;
+            box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
         }
         </style>
     """,
