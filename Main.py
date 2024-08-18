@@ -1,7 +1,6 @@
 import streamlit as st
 from sympy import symbols, Eq, solve, sympify, latex, N
 
-
 def solve_equation(equation_input, variable_input, convert_numeric):
     try:
         if "=" in equation_input:
@@ -100,6 +99,8 @@ def main():
     )
 
     convert_numeric = st.checkbox("Konversi solusi ke bentuk numerik", False)
+    
+    st.info("Untuk polinomial berderajat lebih dari atau sama dengan 5, tidak ada solusi analytikal. Gunakan konversi numerik di atas")
 
     if st.button("Solusi"):
         solusi = solve_equation(persamaan_input, variabel_input, convert_numeric)
